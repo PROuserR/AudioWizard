@@ -1,5 +1,4 @@
 # AudioWizard
-Its really an audio wizard!
 I made this project for the public to enjoy using audio software and its totaly free its not a pro audio software or something like that AudioWizard is just an application that serves public needs
 like youtube downloading and recording audio from the sound card
 or simply to play audio!
