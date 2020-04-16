@@ -29,6 +29,6 @@ This app can:
 <br>
 <b>2-Naudio is a soundlib and you may install it using nuget(The package manger for .Net)</b>
 <br>
-<b>3-WaveFormRendererLib,make sure you have this lib(To render waveform)</b>
-<hr>
-For more info about Naudio go <a href="https://github.com/naudio/NAudio">here</a>
+<b>3-WaveFormRendererLib,make sure you have this lib it shall be inside Naudio(To render waveform)</b>
+<br>
+For more info about Naudio go <a href="https://github.com/naudio/NAudio">here</a> :)
