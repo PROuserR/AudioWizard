@@ -23,5 +23,10 @@ This app can:
 <br>
 8-Make some effects
 <br>
-9-Listen to right or left speaker 
-Refer to wiki for how to build this app
+9-Listen to right or left speaker
+<br>
+<b>To build to this app you need to have:</b>
+<br>
+<b>1-.Net framework 4.0 at least (Windows Forms)</b>
+<b>2-Naudio is a soundlib and you may install it using nuget(The package manger for .Net)</b>
+
