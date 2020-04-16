@@ -1,7 +1,5 @@
-# AudioWizard
+# AudioWizard not a normal audio app!
 <img src="images/wizard-icon.png" />
-<br>
-<h1>Not a normal audio app!</h1>
 <br>
 This app can:
 <br>
@@ -24,7 +22,7 @@ This app can:
 8-Make some effects
 <br>
 9-Listen to right or left speaker
-<br>
+<hr>
 <b>To build to this app you need to have:</b>
 <br>
 <b>1-.Net framework 4.0 at least (Windows Forms)</b>
@@ -32,3 +30,5 @@ This app can:
 <b>2-Naudio is a soundlib and you may install it using nuget(The package manger for .Net)</b>
 <br>
 <b>3-WaveFormRendererLib,make sure you have this lib(To render waveform)</b>
+<hr>
+For more info about Naudio go <a href="https://github.com/naudio/NAudio">here</a>
