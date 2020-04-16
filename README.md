@@ -25,10 +25,15 @@ This app can:
 <hr>
 <b>To build to this app you need to have:</b>
 <br>
-<b>1-.Net framework 4.0 at least (Windows Forms)</b>
+<b>1-.Net framework 4.6.1 at least (Windows Forms)</b>
 <br>
-<b>2-Naudio is a soundlib and you may install it using nuget(The package manger for .Net)</b>
+<b>2-These packages including:(install them from nuget)</b>
+  <ul>
+  <li>Naudio</li>
+  <li>TagLib</li>
+  <li>YoutubeExplode</li>
+  </ul>
 <br>
-<b>3-WaveFormRendererLib,make sure you have this lib it shall be inside Naudio(To render waveform)</b>
+<b>3-WaveFormRendererLib,make sure you have this lib go to<a href="https://github.com/naudio/NAudio.WaveFormRenderer">WaveFormRendererLib</a></b>
 <br>
 For more info about Naudio go <a href="https://github.com/naudio/NAudio">here</a> :)
