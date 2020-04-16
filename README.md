@@ -26,7 +26,7 @@ This app can:
 <b>To build to this app you need to have:</b>
 <br><br>
 <b>1-.Net framework 4.6.1 at least (Windows Forms)</b>
-<br>
+<br><br>
 <b>2-These packages including:(install them from nuget)</b>
   <ul>
   <li>Naudio</li>
