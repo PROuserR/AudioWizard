@@ -28,5 +28,7 @@ This app can:
 <b>To build to this app you need to have:</b>
 <br>
 <b>1-.Net framework 4.0 at least (Windows Forms)</b>
+<br>
 <b>2-Naudio is a soundlib and you may install it using nuget(The package manger for .Net)</b>
-
+<br>
+<b>3-WaveFormRendererLib,make sure you have this lib(To render waveform)</b>
