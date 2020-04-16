@@ -1,7 +1,7 @@
 # AudioWizard
 <img src="images/wizard-icon.png" />
 <br>
-Not a normal audio app!
+<h1>Not a normal audio app!</h1>
 <br>
 It has many features..
 <br>
