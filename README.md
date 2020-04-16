@@ -33,7 +33,6 @@ This app can:
   <li>TagLib</li>
   <li>YoutubeExplode</li>
   </ul>
-<br>
 <b>3-WaveFormRendererLib,make sure you have this lib go to<a href="https://github.com/naudio/NAudio.WaveFormRenderer">WaveFormRendererLib</a></b>
 <br>
 For more info about Naudio go <a href="https://github.com/naudio/NAudio">here</a> :)
