@@ -1,6 +1,8 @@
 # AudioWizard
 <img src="images/wizard-icon.png" />
+<br>
 Not a normal audio app!
+\n
 It has many features..
 This app can:
 1-Read from mp4 file to output only audio
