@@ -7,6 +7,8 @@ using NAudio.Wave;
 using NAudio.Wave.SampleProviders;
 using NAudio.MediaFoundation;
 using WaveFormRendererLib;
+using YoutubeExplode;
+using YoutubeExplode.Videos.Streams;
 
 namespace AudioWizard
 {
@@ -447,23 +449,6 @@ namespace AudioWizard
 
         }
 
-        private void senderToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Are you a sender", "?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                AudioWizard.Form4 form4 = new AudioWizard.Form4();
-                form4.Show();
-            }
-        }
-
-        private void recevierToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Are you a receiver", "?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                AudioWizard.Form5 form5 = new AudioWizard.Form5();
-                form5.Show();
-            }
-        }
 
         private void positionTrackBar_Scroll(object sender, EventArgs e)
         {
@@ -671,12 +656,6 @@ namespace AudioWizard
             Application.Restart();
         }
 
-        private void pianoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form6 form6 = new Form6();
-            form6.Show();
-        }
-
         private void Record_button_Click(object sender, EventArgs e)
         {
             try
@@ -754,8 +733,28 @@ namespace AudioWizard
 
         private void convertToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form7 form7 = new Form7();
-            form7.ShowDialog();
+            Form4 form4 = new Form4();
+            form4.ShowDialog();
+        }
+
+        private async void downloadYoutubeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var youtube = new YoutubeClient();
+
+            var streamManifest = await youtube.Videos.Streams.GetManifestAsync(textbox.Text);
+
+            // ...or highest bitrate audio-only stream
+            var streamInfo = streamManifest.GetAudioOnly().WithHighestBitrate();
+
+            // Get the actual stream
+            var stream = await youtube.Videos.Streams.GetAsync(streamInfo);
+
+            SFD.Filter = "MP3";
+            SFD.ShowDialog();
+            // Download the stream to file
+            await youtube.Videos.Streams.DownloadAsync(streamInfo, SFD.FileName);
+
+            MessageBox.Show("Download complete");
         }
     }
 }

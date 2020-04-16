@@ -1,33 +1,50 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Net;
-using NSpeex;
-using DarrenLee.LiveStream;
+using NAudio.Wave;
 
 namespace AudioWizard
 {
     public partial class Form4 : Form
     {
+        OpenFileDialog OFD;
         public Form4()
         {
             InitializeComponent();
         }
 
-        private void Send_button_Click(object sender, EventArgs e)
+        private void openButton_Click(object sender, EventArgs e)
         {
-            DarrenLee.LiveStream.Audio.Sender S = new DarrenLee.LiveStream.Audio.Sender();
-            S.Send(textBox1.Text, Convert.ToInt32(textBox2.Text));
+            OFD = new OpenFileDialog();
+            if(OFD.ShowDialog()==DialogResult.OK)
+            {
+                inputTextBox.Text = OFD.FileName;
+                OFD.Dispose();
+            }
         }
 
-        private void GetIP_button_Click(object sender, EventArgs e)
+        private void convertButton_Click(object sender, EventArgs e)
         {
-            int i = 0;
-            foreach(IPAddress iP in System.Net.Dns.GetHostAddresses(Dns.GetHostName()))
+            MediaFoundationReader foundationReader = new MediaFoundationReader(OFD.FileName);
+            SaveFileDialog SFD = new SaveFileDialog();
+            SFD.Title = "Save here your file";
+            if (mp3RadioButton.Checked)
             {
-                i++;
-                if(i==4)
-                MessageBox.Show("Your IP is:" + iP.ToString(), "?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                SFD.Filter = "MP3|*.mp3";
+                SFD.ShowDialog();
+                MediaFoundationEncoder.EncodeToMp3(foundationReader, SFD.FileName);
             }
+            if (aacRadioButton.Checked)
+            {
+                SFD.Filter = "AAC|*.aac";
+                SFD.ShowDialog();
+                MediaFoundationEncoder.EncodeToAac(foundationReader, SFD.FileName);
+            }
+            if (wmaRadioButton.Checked)
+            {
+                SFD.Filter = "WMA|*.wma";
+                SFD.ShowDialog();
+                MediaFoundationEncoder.EncodeToWma(foundationReader, SFD.FileName);
+            } 
 
         }
     }
