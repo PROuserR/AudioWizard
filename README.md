@@ -3,8 +3,6 @@
 <br>
 <h1>Not a normal audio app!</h1>
 <br>
-It has many features..
-<br>
 This app can:
 <br>
 1-Read from mp4 file to output only audio
@@ -26,3 +24,4 @@ This app can:
 8-Make some effects
 <br>
 9-Listen to right or left speaker 
+Refer to wiki for how to build this app
