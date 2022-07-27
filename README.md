@@ -2,6 +2,9 @@
 ![This is an image](https://github.com/PROuserR/AudioWizard/blob/master/images/wizard-icon.png?raw=true)
 
 # ScreenShots
+![This is an image](https://user-images.githubusercontent.com/42172521/181349929-48a5b173-c8b0-44eb-a543-e0d331ff40ba.PNG)
+![This is an image](https://user-images.githubusercontent.com/42172521/181349937-272cebb8-358e-4ea5-afbb-48eca243bf92.PNG)
+![This is an image](https://user-images.githubusercontent.com/42172521/181349940-52a78526-467c-4bc7-ac98-fc62b5ea1616.PNG)
 <br>
 This app can:
 <br>
