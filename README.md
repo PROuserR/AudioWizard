@@ -1,5 +1,5 @@
 # AudioWizard not a normal audio app!
-![This is an image](https://github.com/PROuserR/AudioWizard/blob/master/images/wizard-icon.png)
+![This is an image](https://github.com/PROuserR/AudioWizard/blob/master/images/wizard-icon.png?raw=true)
 
 # ScreenShots
 <br>
