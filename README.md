@@ -1,9 +1,7 @@
 # AudioWizard not a normal audio app!
-<img src="https://github.com/PROuserR/AudioWizard/blob/master/images/wizard-icon.png" />
-#ScreenShots
-<img src="https://github.com/PROuserR/AudioWizard/blob/master/Capture5.PNG" />
-<img src="https://github.com/PROuserR/AudioWizard/blob/master/Capture6.PNG" />
-<img src="https://github.com/PROuserR/AudioWizard/blob/master/Capture7.PNG" />
+![This is an image](https://github.com/PROuserR/AudioWizard/blob/master/images/wizard-icon.png)
+
+# ScreenShots
 <br>
 This app can:
 <br>
