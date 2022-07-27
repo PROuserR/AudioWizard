@@ -1,5 +1,9 @@
 # AudioWizard not a normal audio app!
 <img src="images/wizard-icon.png" />
+#ScreenShots
+<img src="Capture5.png" />
+<img src="Capture6.png" />
+<img src="Capture7.png" />
 <br>
 This app can:
 <br>
